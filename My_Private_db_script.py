@@ -24,7 +24,7 @@ cursor.execute('INSERT INTO my_own_data (name, city, Age) VALUES ("rakesh_lingam
 
 connection.commit()
 
-cursor.execute('SELECT * From my_own_data')
+cursor.execute('SELECT name,city,Age From my_own_data')
 
 
 data_lines = cursor.fetchall()
@@ -35,6 +35,5 @@ for i in data_lines:
     
 print('My dataBase:')
 print(new_list)
-
 
 
